@@ -1,0 +1,11 @@
+# Adds every new pull request to the NoSpoonLabs project «Agent und PokeNexus».
+name: Add to project
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  add:
+    uses: NoSpoonLabs/.github/.github/workflows/add-to-project.yml@main
+    secrets: inherit
