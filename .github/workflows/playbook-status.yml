@@ -1,0 +1,9 @@
+name: Playbook status
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  status:
+    uses: NoSpoonLabs/.github/.github/workflows/playbook-status.yml@main
